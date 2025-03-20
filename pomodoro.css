@@ -1,0 +1,70 @@
+/* Pomodoro Timer Container */
+.pomodoro-timer {
+    width: 80%; /* Adjusted size */
+    max-width: 450px; /* Prevents it from being too large */
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: var(--light);
+    margin: auto;
+}
+
+/* Styling for timer display */
+.timer-display {
+    font-size: 2rem; /* Smaller size */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+/* Timer controls buttons */
+.timer-controls button {
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #142850; /* Deep Burgundy for bold contrast */
+    color: #000000; /* Light text for contrast */
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.timer-controls button:hover {
+    background-color: #5e0f1a; /* Slightly darker burgundy */
+    transform: scale(1.05);
+}
+
+.timer-controls button:active {
+    background-color: #4c0c15;
+    transform: scale(0.98);
+}
+
+/* Radio button styling */
+.timer-mode label {
+    display: inline-block;
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: #7D1424;
+    border: 2px solid #7D1424;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+/* Hover effect */
+.timer-mode label:hover {
+    background-color: darkred;
+}
+
+/* When selected */
+.timer-mode input:checked + label {
+    background-color: #000000;
+    color: #7D1424;
+    border-color: #7D1424;
+}
